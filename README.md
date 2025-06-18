@@ -188,7 +188,7 @@ Our database includes 20+ popular Indian credit cards from major banks:
 
 ### Current Deployment
 - **Frontend**: [https://credit-card-advisor-two.vercel.app/](https://credit-card-advisor-two.vercel.app/) (Vercel)
-- **Backend**: [https://credit-card-advisor-backend.onrender.com](https://credit-card-advisor-backend.onrender.com) (Render)
+- **Backend**: [https://credit-card-advisor.onrender.com](https://credit-card-advisor.onrender.com) (Render)
 
 ### Deployment Instructions
 
