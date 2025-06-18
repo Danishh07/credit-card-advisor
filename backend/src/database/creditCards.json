@@ -1,0 +1,647 @@
+[
+  {
+    "id": "hdfc-regalia",
+    "name": "HDFC Bank Regalia Credit Card",
+    "issuer": "HDFC Bank",
+    "cardImage": "/images/cards/hdfc-regalia.jpg",
+    "joiningFee": 2500,
+    "annualFee": 2500,
+    "feeWaiver": "Spend ₹3,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "2 points per ₹150",
+      "dining": "4 points per ₹150",
+      "travel": "4 points per ₹150",
+      "fuel": "2 points per ₹150",
+      "groceries": "2 points per ₹150"
+    },
+    "eligibility": {
+      "minIncome": 600000,
+      "minCreditScore": 750,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (6 domestic + 3 international per year)",
+      "Complimentary Priority Pass membership",
+      "Golf privileges",
+      "Insurance coverage up to ₹1 crore"
+    ],
+    "category": "Premium",
+    "applyLink": "https://hdfc.com/regalia",
+    "bestFor": ["Travel", "Dining", "Lifestyle"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "icici-amazon-pay",
+    "name": "ICICI Amazon Pay Credit Card",
+    "issuer": "ICICI Bank",
+    "cardImage": "/images/cards/icici-amazon.jpg",
+    "joiningFee": 0,
+    "annualFee": 0,
+    "feeWaiver": "Lifetime free",
+    "rewardType": "Cashback",
+    "rewardRate": {
+      "amazon": "5% cashback",
+      "default": "1% cashback",
+      "dining": "1% cashback",
+      "travel": "1% cashback",
+      "fuel": "1% cashback",
+      "groceries": "1% cashback"
+    },
+    "eligibility": {
+      "minIncome": 300000,
+      "minCreditScore": 700,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "5% cashback on Amazon purchases",
+      "No annual fee",
+      "Welcome bonus of ₹500",
+      "Instant approval for existing ICICI customers"
+    ],
+    "category": "Cashback",
+    "applyLink": "https://icici.com/amazon-pay",
+    "bestFor": ["Online Shopping", "Amazon", "Cashback"],
+    "pointValue": 1
+  },
+  {
+    "id": "sbi-cashback",
+    "name": "SBI Cashback Credit Card",
+    "issuer": "State Bank of India",
+    "cardImage": "/images/cards/sbi-cashback.jpg",
+    "joiningFee": 999,
+    "annualFee": 999,
+    "feeWaiver": "Spend ₹2,00,000 in a year",
+    "rewardType": "Cashback",
+    "rewardRate": {
+      "online": "5% cashback",
+      "default": "1% cashback",
+      "dining": "1% cashback",
+      "travel": "1% cashback",
+      "fuel": "1% cashback",
+      "groceries": "1% cashback"
+    },
+    "eligibility": {
+      "minIncome": 200000,
+      "minCreditScore": 650,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "5% cashback on online spends",
+      "Welcome bonus of ₹500",
+      "No cashback capping",
+      "Easy EMI conversion"
+    ],
+    "category": "Cashback",
+    "applyLink": "https://sbi.com/cashback",
+    "bestFor": ["Online Shopping", "Cashback", "No Capping"],
+    "pointValue": 1
+  },
+  {
+    "id": "axis-magnus",
+    "name": "Axis Bank Magnus Credit Card",
+    "issuer": "Axis Bank",
+    "cardImage": "/images/cards/axis-magnus.jpg",
+    "joiningFee": 12500,
+    "annualFee": 12500,
+    "feeWaiver": "Spend ₹25,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "12 points per ₹200",
+      "dining": "12 points per ₹200",
+      "travel": "25 points per ₹200",
+      "fuel": "12 points per ₹200",
+      "groceries": "12 points per ₹200"
+    },
+    "eligibility": {
+      "minIncome": 1500000,
+      "minCreditScore": 800,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Airport lounge access (8 domestic + 6 international per year)",
+      "Monthly milestone benefits",
+      "Golf privileges",
+      "Concierge services",
+      "Travel insurance up to ₹50 lakh"
+    ],
+    "category": "Super Premium",
+    "applyLink": "https://axis.com/magnus",
+    "bestFor": ["Travel", "High Spenders", "Premium Lifestyle"],
+    "pointValue": 0.20
+  },
+  {
+    "id": "indusind-pinnacle",
+    "name": "IndusInd Bank Pinnacle Credit Card",
+    "issuer": "IndusInd Bank",
+    "cardImage": "/images/cards/indusind-pinnacle.jpg",
+    "joiningFee": 3000,
+    "annualFee": 3000,
+    "feeWaiver": "Spend ₹3,60,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "2 points per ₹100",
+      "dining": "10 points per ₹100",
+      "travel": "10 points per ₹100",
+      "fuel": "2 points per ₹100",
+      "groceries": "5 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 500000,
+      "minCreditScore": 720,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (12 times per year)",
+      "Movie ticket offers",
+      "Dining discounts",
+      "Insurance coverage"
+    ],
+    "category": "Premium",
+    "applyLink": "https://indusind.com/pinnacle",
+    "bestFor": ["Dining", "Travel", "Entertainment"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "kotak-white",
+    "name": "Kotak White Credit Card",
+    "issuer": "Kotak Mahindra Bank",
+    "cardImage": "/images/cards/kotak-white.jpg",
+    "joiningFee": 999,
+    "annualFee": 999,
+    "feeWaiver": "Spend ₹1,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹100",
+      "dining": "4 points per ₹100",
+      "travel": "4 points per ₹100",
+      "fuel": "2 points per ₹100",
+      "groceries": "2 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 300000,
+      "minCreditScore": 700,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Buy 1 Get 1 movie tickets",
+      "Airport lounge access (4 times per year)",
+      "Fuel surcharge waiver",
+      "Insurance benefits"
+    ],
+    "category": "Mid-tier",
+    "applyLink": "https://kotak.com/white",
+    "bestFor": ["Entertainment", "Dining", "Fuel"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "yes-marquee",
+    "name": "YES Bank Marquee Credit Card",
+    "issuer": "YES Bank",
+    "cardImage": "/images/cards/yes-marquee.jpg",
+    "joiningFee": 5000,
+    "annualFee": 5000,
+    "feeWaiver": "Spend ₹8,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "3 points per ₹100",
+      "dining": "6 points per ₹100",
+      "travel": "6 points per ₹100",
+      "fuel": "3 points per ₹100",
+      "groceries": "3 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 800000,
+      "minCreditScore": 750,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (unlimited domestic)",
+      "Golf privileges",
+      "Concierge services",
+      "Travel insurance"
+    ],
+    "category": "Premium",
+    "applyLink": "https://yesbank.com/marquee",
+    "bestFor": ["Travel", "Dining", "High Spenders"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "standard-chartered-platinum",
+    "name": "Standard Chartered Platinum Rewards Credit Card",
+    "issuer": "Standard Chartered",
+    "cardImage": "/images/cards/sc-platinum.jpg",
+    "joiningFee": 1000,
+    "annualFee": 1000,
+    "feeWaiver": "Spend ₹1,20,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹150",
+      "dining": "5 points per ₹150",
+      "travel": "5 points per ₹150",
+      "fuel": "5 points per ₹150",
+      "groceries": "1 point per ₹150"
+    },
+    "eligibility": {
+      "minIncome": 400000,
+      "minCreditScore": 720,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Welcome bonus points",
+      "Dining and travel rewards",
+      "Fuel surcharge waiver",
+      "Insurance coverage"
+    ],
+    "category": "Mid-tier",
+    "applyLink": "https://sc.com/platinum",
+    "bestFor": ["Dining", "Travel", "Fuel"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "citi-rewards",
+    "name": "Citi Rewards Credit Card",
+    "issuer": "Citibank",
+    "cardImage": "/images/cards/citi-rewards.jpg",
+    "joiningFee": 1000,
+    "annualFee": 1000,
+    "feeWaiver": "Spend ₹30,000 in first 60 days",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹125",
+      "dining": "10 points per ₹125",
+      "travel": "4 points per ₹125",
+      "fuel": "2 points per ₹125",
+      "groceries": "2 points per ₹125"
+    },
+    "eligibility": {
+      "minIncome": 300000,
+      "minCreditScore": 700,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Welcome bonus of 5,000 points",
+      "Accelerated rewards on dining",
+      "Travel and lifestyle benefits",
+      "Insurance coverage"
+    ],
+    "category": "Mid-tier",
+    "applyLink": "https://citi.com/rewards",
+    "bestFor": ["Dining", "Travel", "Rewards"],
+    "pointValue": 0.20
+  },
+  {
+    "id": "bob-eterna",
+    "name": "Bank of Baroda Eterna Credit Card",
+    "issuer": "Bank of Baroda",
+    "cardImage": "/images/cards/bob-eterna.jpg",
+    "joiningFee": 999,
+    "annualFee": 999,
+    "feeWaiver": "Spend ₹90,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹100",
+      "dining": "2 points per ₹100",
+      "travel": "2 points per ₹100",
+      "fuel": "2 points per ₹100",
+      "groceries": "2 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 250000,
+      "minCreditScore": 650,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Airport lounge access (4 times per year)",
+      "Welcome bonus",
+      "Milestone benefits",
+      "Insurance coverage"
+    ],
+    "category": "Entry-level Premium",
+    "applyLink": "https://bob.com/eterna",
+    "bestFor": ["General Spending", "Low Income", "Entry Premium"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "rbl-world-safari",
+    "name": "RBL World Safari Credit Card",
+    "issuer": "RBL Bank",
+    "cardImage": "/images/cards/rbl-safari.jpg",
+    "joiningFee": 1000,
+    "annualFee": 1000,
+    "feeWaiver": "Spend ₹1,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹100",
+      "dining": "4 points per ₹100",
+      "travel": "4 points per ₹100",
+      "fuel": "4 points per ₹100",
+      "groceries": "2 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 360000,
+      "minCreditScore": 700,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (4 times per year)",
+      "Movie ticket discounts",
+      "Dining privileges",
+      "Travel insurance"
+    ],
+    "category": "Mid-tier",
+    "applyLink": "https://rbl.com/safari",
+    "bestFor": ["Travel", "Dining", "Fuel"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "amex-gold",
+    "name": "American Express Gold Card",
+    "issuer": "American Express",
+    "cardImage": "/images/cards/amex-gold.jpg",
+    "joiningFee": 4500,
+    "annualFee": 4500,
+    "feeWaiver": "Spend ₹1,90,000 in first year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹50",
+      "dining": "2 points per ₹50",
+      "travel": "2 points per ₹50",
+      "fuel": "1 point per ₹50",
+      "groceries": "2 points per ₹50"
+    },
+    "eligibility": {
+      "minIncome": 600000,
+      "minCreditScore": 750,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Global acceptance",
+      "Travel insurance",
+      "Purchase protection",
+      "24/7 concierge service",
+      "Exclusive dining offers"
+    ],
+    "category": "Premium",
+    "applyLink": "https://americanexpress.com/gold",
+    "bestFor": ["International Travel", "Dining", "Premium Services"],
+    "pointValue": 0.50
+  },
+  {
+    "id": "federal-celesta",
+    "name": "Federal Bank Celesta Credit Card",
+    "issuer": "Federal Bank",
+    "cardImage": "/images/cards/federal-celesta.jpg",
+    "joiningFee": 499,
+    "annualFee": 499,
+    "feeWaiver": "Spend ₹50,000 in a year",
+    "rewardType": "Cashback",
+    "rewardRate": {
+      "default": "1% cashback",
+      "dining": "5% cashback",
+      "travel": "2% cashback",
+      "fuel": "1% cashback",
+      "groceries": "2% cashback"
+    },
+    "eligibility": {
+      "minIncome": 200000,
+      "minCreditScore": 650,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Welcome cashback of ₹500",
+      "High cashback on dining",
+      "Easy redemption",
+      "No minimum redemption"
+    ],
+    "category": "Entry-level",
+    "applyLink": "https://federal.com/celesta",
+    "bestFor": ["Dining", "Entry Level", "Cashback"],
+    "pointValue": 1
+  },
+  {
+    "id": "au-zenith",
+    "name": "AU Bank Zenith Credit Card",
+    "issuer": "AU Small Finance Bank",
+    "cardImage": "/images/cards/au-zenith.jpg",
+    "joiningFee": 1999,
+    "annualFee": 1999,
+    "feeWaiver": "Spend ₹2,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "2 points per ₹100",
+      "dining": "5 points per ₹100",
+      "travel": "5 points per ₹100",
+      "fuel": "3 points per ₹100",
+      "groceries": "3 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 400000,
+      "minCreditScore": 720,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (6 times per year)",
+      "Golf privileges",
+      "Movie ticket offers",
+      "Milestone rewards"
+    ],
+    "category": "Mid-tier",
+    "applyLink": "https://au.com/zenith",
+    "bestFor": ["Dining", "Travel", "Golf"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "idfc-wealth",
+    "name": "IDFC FIRST Wealth Credit Card",
+    "issuer": "IDFC FIRST Bank",
+    "cardImage": "/images/cards/idfc-wealth.jpg",
+    "joiningFee": 2500,
+    "annualFee": 2500,
+    "feeWaiver": "Spend ₹5,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "3 points per ₹200",
+      "dining": "6 points per ₹200",
+      "travel": "6 points per ₹200",
+      "fuel": "3 points per ₹200",
+      "groceries": "3 points per ₹200"
+    },
+    "eligibility": {
+      "minIncome": 500000,
+      "minCreditScore": 750,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (unlimited domestic)",
+      "Concierge services",
+      "Travel insurance",
+      "Golf benefits"
+    ],
+    "category": "Premium",
+    "applyLink": "https://idfc.com/wealth",
+    "bestFor": ["Travel", "Dining", "Premium Services"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "hsbc-cashback",
+    "name": "HSBC Cashback Credit Card",
+    "issuer": "HSBC Bank",
+    "cardImage": "/images/cards/hsbc-cashback.jpg",
+    "joiningFee": 750,
+    "annualFee": 750,
+    "feeWaiver": "Spend ₹1,00,000 in a year",
+    "rewardType": "Cashback",
+    "rewardRate": {
+      "default": "1.5% cashback",
+      "dining": "6% cashback",
+      "travel": "3% cashback",
+      "fuel": "1.5% cashback",
+      "groceries": "6% cashback"
+    },
+    "eligibility": {
+      "minIncome": 400000,
+      "minCreditScore": 700,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "High cashback rates",
+      "Welcome bonus",
+      "No capping on cashback",
+      "Easy redemption"
+    ],
+    "category": "Cashback",
+    "applyLink": "https://hsbc.com/cashback",
+    "bestFor": ["Dining", "Groceries", "Cashback"],
+    "pointValue": 1
+  },
+  {
+    "id": "pnb-select",
+    "name": "PNB Select Credit Card",
+    "issuer": "Punjab National Bank",
+    "cardImage": "/images/cards/pnb-select.jpg",
+    "joiningFee": 500,
+    "annualFee": 500,
+    "feeWaiver": "Spend ₹60,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹125",
+      "dining": "2 points per ₹125",
+      "travel": "2 points per ₹125",
+      "fuel": "2 points per ₹125",
+      "groceries": "1 point per ₹125"
+    },
+    "eligibility": {
+      "minIncome": 180000,
+      "minCreditScore": 650,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Welcome bonus",
+      "Fuel surcharge waiver",
+      "Insurance benefits",
+      "Easy EMI options"
+    ],
+    "category": "Entry-level",
+    "applyLink": "https://pnb.com/select",
+    "bestFor": ["Entry Level", "Basic Rewards", "Low Income"],
+    "pointValue": 0.20
+  },
+  {
+    "id": "dbs-insignia",
+    "name": "DBS Insignia Credit Card",
+    "issuer": "DBS Bank",
+    "cardImage": "/images/cards/dbs-insignia.jpg",
+    "joiningFee": 2999,
+    "annualFee": 2999,
+    "feeWaiver": "Spend ₹3,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹150",
+      "dining": "5 points per ₹150",
+      "travel": "5 points per ₹150",
+      "fuel": "2 points per ₹150",
+      "groceries": "2 points per ₹150"
+    },
+    "eligibility": {
+      "minIncome": 500000,
+      "minCreditScore": 720,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "Airport lounge access (8 times per year)",
+      "Golf privileges",
+      "Concierge services",
+      "Travel insurance"
+    ],
+    "category": "Premium",
+    "applyLink": "https://dbs.com/insignia",
+    "bestFor": ["Travel", "Dining", "Golf"],
+    "pointValue": 0.25
+  },
+  {
+    "id": "axis-flipkart",
+    "name": "Axis Bank Flipkart Credit Card",
+    "issuer": "Axis Bank",
+    "cardImage": "/images/cards/axis-flipkart.jpg",
+    "joiningFee": 500,
+    "annualFee": 500,
+    "feeWaiver": "Spend ₹2,00,000 in a year",
+    "rewardType": "Cashback",
+    "rewardRate": {
+      "flipkart": "5% cashback",
+      "default": "1% cashback",
+      "dining": "1% cashback",
+      "travel": "1% cashback",
+      "fuel": "1% cashback",
+      "groceries": "1% cashback"
+    },
+    "eligibility": {
+      "minIncome": 200000,
+      "minCreditScore": 650,
+      "ageRange": "21-60"
+    },
+    "specialPerks": [
+      "5% unlimited cashback on Flipkart",
+      "4% cashback on Myntra, 2GUD",
+      "Welcome bonus",
+      "No annual fee for first year"
+    ],
+    "category": "Shopping",
+    "applyLink": "https://axis.com/flipkart",
+    "bestFor": ["Flipkart Shopping", "E-commerce", "Cashback"],
+    "pointValue": 1
+  },
+  {
+    "id": "sbi-prime",
+    "name": "SBI Prime Credit Card",
+    "issuer": "State Bank of India",
+    "cardImage": "/images/cards/sbi-prime.jpg",
+    "joiningFee": 2999,
+    "annualFee": 2999,
+    "feeWaiver": "Spend ₹3,00,000 in a year",
+    "rewardType": "Points",
+    "rewardRate": {
+      "default": "1 point per ₹100",
+      "dining": "5 points per ₹100",
+      "travel": "5 points per ₹100",
+      "fuel": "5 points per ₹100",
+      "groceries": "2 points per ₹100"
+    },
+    "eligibility": {
+      "minIncome": 500000,
+      "minCreditScore": 720,
+      "ageRange": "21-65"
+    },
+    "specialPerks": [
+      "Airport lounge access (6 times per year)",
+      "Golf privileges",
+      "Insurance coverage",
+      "Milestone benefits"
+    ],
+    "category": "Premium",
+    "applyLink": "https://sbi.com/prime",
+    "bestFor": ["Travel", "Dining", "Fuel"],
+    "pointValue": 0.20
+  }
+]
