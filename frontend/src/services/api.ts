@@ -1,6 +1,13 @@
 import axios from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
+const MOCK_ENABLED = process.env.REACT_APP_MOCK_ENABLED === 'true';
+
+console.log(`🌍 API URL: ${API_BASE_URL}`);
+console.log(`🔄 Mock Mode: ${MOCK_ENABLED ? 'Enabled' : 'Disabled'}`);
+
+// Track API availability
+let apiAvailable = true;
 
 // Create axios instance with default config
 const api = axios.create({
@@ -26,8 +33,28 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => {
     return response;
-  },
-  (error) => {
+  },  (error) => {
+    // Track API connectivity issues
+    if (error.code === 'ERR_NETWORK' || error.code === 'ECONNABORTED') {
+      console.log('⚠️ API connectivity issue detected, enabling mock mode');
+      apiAvailable = false;
+      
+      // If this is a chat message and mock mode is available, use mock response
+      if (error.config.url?.includes('/chat/') && MOCK_ENABLED) {
+        console.log('🤖 Using mock response for chat message');
+        return Promise.resolve({
+          data: {
+            message: "I'm your credit card advisor. To help you find the perfect card, let's start with your monthly income. What's your approximate monthly income?",
+            suggestions: [
+              "My monthly income is ₹50,000",
+              "I earn about ₹1 lakh per month",
+              "I prefer not to share my income"
+            ]
+          }
+        });
+      }
+    }
+
     if (error.response?.status === 429) {
       // Rate limited
       throw new Error('Too many requests. Please wait a moment and try again.');
@@ -39,6 +66,10 @@ api.interceptors.response.use(
     
     if (error.code === 'ECONNABORTED') {
       throw new Error('Request timeout. Please check your connection.');
+    }
+    
+    if (error.code === 'ERR_NETWORK') {
+      throw new Error('Network error. The server might be unavailable.');  
     }
     
     throw error;
