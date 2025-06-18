@@ -9,7 +9,6 @@ router.post('/start', chatController.startSession);
 router.post('/:sessionId/message', chatController.sendMessage);
 router.get('/:sessionId', chatController.getSession);
 router.post('/:sessionId/reset', chatController.resetSession);
-router.get('/:sessionId/debug', chatController.debugSession);
 router.get('/stats/overview', chatController.getStats);
 
 export default router;
