@@ -188,7 +188,7 @@ Our database includes 20+ popular Indian credit cards from major banks:
 
 ### Current Deployment
 - **Frontend**: [https://credit-card-advisor-two.vercel.app/](https://credit-card-advisor-two.vercel.app/) (Vercel)
-- **Backend**: [https://credit-card-advisor-production.up.railway.app](https://credit-card-advisor-production.up.railway.app) (Railway)
+- **Backend**: [https://credit-card-advisor-backend.onrender.com](https://credit-card-advisor-backend.onrender.com) (Render)
 
 ### Deployment Instructions
 
@@ -201,12 +201,14 @@ Our database includes 20+ popular Indian credit cards from major banks:
 3. Add environment variables:
    - `REACT_APP_API_URL`: Your backend API URL
 
-#### Backend (Railway)
-1. Connect GitHub repository to Railway
-2. Configure settings:
+#### Backend (Render)
+1. Connect GitHub repository to Render
+2. Create a new Web Service with these settings:
    - Root Directory: `backend`
+   - Runtime: Node
+   - Build Command: `npm install`
    - Start Command: `npm start`
-   - Watch Paths: `backend`
+   - Instance Type: Free (for testing)
 3. Add environment variables:
    - `PORT`: 3001
    - `NODE_ENV`: production
