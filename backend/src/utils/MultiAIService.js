@@ -15,25 +15,34 @@ class MultiAIService {
       openai: new OpenAIService(),
       mock: new MockAIService()
     };
+      // Get preference order from environment or use default
+    const envPreference = process.env.AI_SERVICES;
     
-    this.preferenceOrder = [
-      'ollama',      // Free, local, no API costs
-      'huggingface', // Free tier available
-      'openai',      // Fallback to original
-      'mock'         // Always available fallback
-    ];
+    this.preferenceOrder = envPreference 
+      ? envPreference.split(',').map(s => s.trim().toLowerCase())
+      : [
+        'mock',        // Always available fallback - put first in production without API keys
+        'ollama',      // Free, local, no API costs
+        'huggingface', // Free tier available
+        'openai',      // Fallback to original
+      ];
     
     this.currentService = null;
     this.availableServices = [];
   }
-
   /**
    * Initialize and check available services
    */
   async initialize() {
     console.log('🔍 Checking available AI services...');
     
+    // Always add MockAI as a fallback
+    this.availableServices.push('mock');
+    console.log(`✅ MOCK service available (always available as fallback)`);
+    
     for (const serviceName of this.preferenceOrder) {
+      if (serviceName === 'mock') continue; // Already added above
+      
       const service = this.services[serviceName];
       
       try {
@@ -47,7 +56,7 @@ class MultiAIService {
             console.log(`❌ ${serviceName.toUpperCase()} service not available`);
           }
         } else {
-          // For services without availability check (like MockAI)
+          // For services without availability check
           this.availableServices.push(serviceName);
           console.log(`✅ ${serviceName.toUpperCase()} service available (no check method)`);
         }

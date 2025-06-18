@@ -8,9 +8,21 @@ dotenv.config();
  */
 class OpenAIService {
   constructor() {
-    this.openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-    });
+    // Only initialize if API key is available
+    this.apiKeyAvailable = !!process.env.OPENAI_API_KEY;
+    
+    if (this.apiKeyAvailable) {
+      try {
+        this.openai = new OpenAI({
+          apiKey: process.env.OPENAI_API_KEY,
+        });
+      } catch (error) {
+        console.error('Failed to initialize OpenAI client:', error);
+        this.apiKeyAvailable = false;
+      }
+    } else {
+      console.warn('OpenAI API key not found - OpenAI service will be unavailable');
+    }
     
     this.systemPrompt = `You are a friendly and knowledgeable credit card advisor specializing in Indian credit cards. Your goal is to help users find the perfect credit card based on their financial profile and spending habits.
 
@@ -45,17 +57,30 @@ class OpenAIService {
 
 Remember: Be conversational, not robotic. Show empathy and understanding.`;
   }
-
+  /**
+   * Check if the OpenAI service is available
+   * @returns {boolean} True if the service is available
+   */
+  async isAvailable() {
+    return this.apiKeyAvailable;
+  }
+  
   /**
    * Generate AI response based on conversation context
-   */
-  async generateResponse(chatHistory, userProfile, currentStep) {
+   */  async generateResponse(chatHistory, userProfile, currentStep) {
     try {
+      // Check if API key is available
+      if (!this.apiKeyAvailable) {
+        throw new Error('OpenAI API key not available');
+      }
+      
       const messages = [
         { role: 'system', content: this.systemPrompt },
         ...this.formatChatHistory(chatHistory),
         { role: 'system', content: this.getContextPrompt(userProfile, currentStep) }
-      ];      const completion = await this.openai.chat.completions.create({
+      ];
+      
+      const completion = await this.openai.chat.completions.create({
         model: 'gpt-3.5-turbo-0125',
         messages: messages,
         max_tokens: 500,
