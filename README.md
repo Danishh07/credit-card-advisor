@@ -5,7 +5,7 @@ A sophisticated web-based application that uses AI to provide personalized credi
 ## 🎥 Demo
 
 ### Live Application
-🚀 **[View Live Demo](https://your-deployed-app.vercel.app)** *(Replace with actual deployment URL)*
+🚀 **[View Live Demo](https://credit-card-advisor-two.vercel.app/)** - *Try the AI-powered credit card advisor now!*
 
 ### Demo Video/GIF
 ![Credit Card Advisor Demo](./demo/demo.gif)
@@ -186,17 +186,31 @@ Our database includes 20+ popular Indian credit cards from major banks:
 
 ## 📦 Deployment
 
-### Vercel Deployment
-1. Sign up or log in to Vercel
-2. Import GitHub repository
-3. Set up environment variables in Vercel dashboard
-4. Deploy the application
+### Current Deployment
+- **Frontend**: [https://credit-card-advisor-two.vercel.app/](https://credit-card-advisor-two.vercel.app/) (Vercel)
+- **Backend**: [https://credit-card-advisor-production.up.railway.app](https://credit-card-advisor-production.up.railway.app) (Railway)
 
-### Docker Deployment
-1. Install Docker
-2. Build Docker images for frontend and backend
-3. Run containers with appropriate environment variables
-4. Access the application at `http://localhost:3000`
+### Deployment Instructions
+
+#### Frontend (Vercel)
+1. Connect GitHub repository to Vercel
+2. Configure build settings:
+   - Root Directory: `frontend`
+   - Build Command: `npm run build`
+   - Output Directory: `build`
+3. Add environment variables:
+   - `REACT_APP_API_URL`: Your backend API URL
+
+#### Backend (Railway)
+1. Connect GitHub repository to Railway
+2. Configure settings:
+   - Root Directory: `backend`
+   - Start Command: `npm start`
+   - Watch Paths: `backend`
+3. Add environment variables:
+   - `PORT`: 3001
+   - `NODE_ENV`: production
+   - `FRONTEND_URL`: Your frontend URL
 
 > **Note**: Ensure that ports are correctly mapped and environment variables are set for production.
 
