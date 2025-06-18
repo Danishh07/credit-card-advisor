@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: credit-card-advisor-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: FRONTEND_URL
+        value: https://credit-card-advisor-two.vercel.app
